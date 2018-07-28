@@ -1,0 +1,25 @@
+package iii;
+
+public class joe99 {
+
+	public static void main(String[] args) {
+/*		System.out.print("2 X 1 = 2\t");
+		System.out.print("3 X 1 = 2\t");
+		System.out.print("4 X 1 = 2\t");
+		System.out.print("5 X 1 = 2\t");*/
+//		int a = 5;
+		for(int k=0; k<3;k++) {
+			for(int y=1; y<=9; y++) {
+				for(int x=2; x<=5; x++) {
+					int newx = x + (k * 4);
+					int r = newx * y; 
+					System.out.print(newx + "X" +y+ "=" + r +"\t");// \t eclipse 預設為空4個字原
+				}
+			System.out.println("");
+			}
+		System.out.println("---------");
+		}
+
+	}
+
+}

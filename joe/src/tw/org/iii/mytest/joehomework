@@ -1,0 +1,22 @@
+package iii;
+
+public class joehomework {
+
+	public static void main(String[] args) {
+		long star = System.currentTimeMillis();//目前時間 千分之一秒為單位 用long表示
+		for(int i=1; i<=100;i++) {
+			boolean isPrime = true;
+			for(int j=2; j<i; j++) {
+				if(i % j==0) {
+					isPrime = false;
+					break;
+				}
+			}
+			System.out.print(i + (isPrime?"*":" ") + "  ");
+			if (i % 10 == 0) {System.out.println();}
+		}
+
+		System.out.println(System.currentTimeMillis() - star);
+	}
+
+}
